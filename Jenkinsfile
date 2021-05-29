@@ -3,8 +3,10 @@ pipeline {
     environment {
         PROJECT_ID = 'project720-285920'
         CLUSTER_NAME = ''
-        LOCATION = 'cluter-1'
+        LOCATION = 'cluster-1'
         CREDENTIALS_ID = 'project720-285920'
+        registry = "ravishdocker21/web-hello"
+        registrycredentials = 'dockerhub'
     }
     stages {
         stage("Checkout code") {
@@ -15,7 +17,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("dockerravish21/web-hello:${env.BUILD_ID}")
+                    myapp = docker.build registry + ":${env.BUILD_ID}"
                 }
             }
         }
