@@ -5,7 +5,7 @@ pipeline {
         CLUSTER_NAME = ''
         LOCATION = 'cluster-1'
         CREDENTIALS_ID = 'project720-285920'
-        registry = "ravishdocker21/web-hello"
+        registry = "dockerravish21/web-hello"
         registrycredentials = 'dockerhub'
     }
     stages {
