@@ -18,7 +18,7 @@ spec:
         app: my-web-app
     spec:
       containers:
-      - image: web-hello:latest
+      - image: dockerravish21/web-hello:latest
         name: web-hello
         ports:
         - containerPort: 5000
