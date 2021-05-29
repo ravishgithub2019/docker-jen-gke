@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("web-hello:${env.BUILD_ID}")
+                    myapp = docker.build("dockerravish21/web-hello:${env.BUILD_ID}")
                 }
             }
         }
