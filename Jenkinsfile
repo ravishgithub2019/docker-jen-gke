@@ -2,8 +2,8 @@ pipeline {
     agent any
     environment {
         PROJECT_ID = 'project720-285920'
-        CLUSTER_NAME = ''
-        LOCATION = 'cluster-1'
+        CLUSTER_NAME = 'cluster-1'
+        LOCATION = 'us-central1-c'
         CREDENTIALS_ID = 'project720-285920'
         registry = "dockerravish21/web-hello"
         registrycredentials = 'dockerhub'
