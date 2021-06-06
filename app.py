@@ -3,4 +3,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, Git! Docker! Jenkins! GKE! CICD1!'
+    return 'Hello, Git-SSH! Docker! Jenkins! GKE! CICD1!'
